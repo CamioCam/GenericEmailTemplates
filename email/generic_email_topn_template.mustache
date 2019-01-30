@@ -1,0 +1,137 @@
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>{{ title }}</title>
+    <style type="text/css">
+* {
+  box-sizing: border-box;
+}
+img {
+  max-width: 100%;
+}
+body {
+  -webkit-font-smoothing: antialiased; -webkit-text-size-adjust: none; width: 100% !important; height: 100%; line-height: 1.6; background-color: #f5f5f5; font-family: 'Helvetica Neue', 'Helvetica', Helvetica, Arial, sans-serif;
+}
+.body-wrap {
+  font-size: 14px; width: 100%; background: #f5f5f5; margin: 0; padding: 0;
+}
+@media only screen and (max-width: 640px) {
+  h1 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h2 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h3 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h4 {
+    font-weight: 600 !important; margin: 20px 0 5px !important;
+  }
+  h1 {
+    font-size: 22px !important;
+  }
+  h2 {
+    font-size: 18px !important;
+  }
+  h3 {
+    font-size: 16px !important;
+  }
+  .container {
+    width: 100% !important;
+  }
+  .content {
+    padding: 10px !important;
+  }
+  .content-wrapper {
+    padding: 10px !important;
+  }
+  .invoice {
+    width: 100% !important;
+  }
+}
+tr {
+  margin: 0; padding: 0;
+}
+td.container {
+  font-size: 14px; vertical-align: top; display: block !important; max-width: 600px !important; clear: both !important; margin: 0 auto; padding: 0;
+}
+    </style>
+  </head>
+  <body>
+    <table class="body-wrap">
+      <tbody>
+        <tr>
+          <td style="font-size: 14px; vertical-align: top; margin: 0; padding: 0;" valign="top"></td>
+          <td class="container" width="600"  valign="top">
+            <div class="content" style="font-size: 14px; max-width: 600px; display: block; margin: 0 auto; padding: 20px;">
+              <table class="main" width="100%" cellpadding="0" cellspacing="0" style="font-size: 14px; border-radius: 6px; background: #fff; margin: 0; padding: 0; box-shadow: 0 2px 5px #dadada;;">
+                <tbody>
+                  <tr>
+                    <td style="font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 6px 6px 0 0; background:#fff; margin: 0; padding: 20px;" align="center" valign="top">
+                      <a href="https://video.generic.com" target="_blank">
+                        <img src="https://storage.googleapis.com/camio_general/generic-logo.png" width="100">
+                      </a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="content-wrap" style="font-size: 17px; color:#939393; text-shadow: 0 1px #fff; vertical-align: top; margin: 0; padding: 20px; text-align:center;" valign="top">
+                      {{{ innerBody }}}
+                      <center>
+                        {{#top_images}}
+                        <div style="display:inline-block; margin-top:20px; box-shadow: 0 2px 5px #dadada; border-radius:5px;">
+                          <a href="{{{link}}}" style="text-decoration:none;">
+                            <img src="cid:image{{counter}}"
+                                 alt="[image highlight]"
+                                 style="border-radius:5px 5px 0 0" />
+                            <div style="padding:5px; margin-top: -5px; background-color:#f5f5f5; border-radius:0 0 5px 5px;text-align:center; box-shadow:0 2px 2px 0px #C7C7C7;">
+                              <span style="color:#939393;">{{start_time}} {{camera}}</span>
+                            </div>
+                          </a>
+                        </div>
+                        {{/top_images}}
+                      </center>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td class="content-block" style="font-size: 14px; vertical-align: top; margin: 0; padding: 13px 20px 10px 20px; color:#939393" align="center" valign="top">
+                      This Daily email gets better as it learns what's important to you. You can 
+                      <a href="http://help.camio.com/hc/en-us/articles/203802259">train it quickly</a> by giving thumbs-up to 
+                      important events and thumbs-down to unimportant events.<br/>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 16px; vertical-align: top; font-weight: 500; text-align: center; margin: 0; padding: 20px;text-align: center; margin: 0; padding: 20px;" align="center" valign="top">
+                      <a href="https://video.generic.com/app" target="_blank" style="text-decoration: none;color: #3ac162; background: #F6FFF9; border-radius: 5px;font-size: 17px; font-weight: 200; text-shadow: none; cursor: pointer; padding: 8px 20px; letter-spacing: 1px; border: 2px solid #3ac162;display:inline-block">Train Now</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td style="font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius:  0 0 6px 6px; background: #fff; margin: 0; padding: 13px 20px 10px 20px;" align="right" valign="top">
+                      <a style="padding-top:2px;" href="https://www.facebook.com/generic" target="_blank"><img src="https://video.generic.com/images/email/email-fbook.jpg"></a>
+                      <a style="padding-top:2px;" href="https://plus.google.com/+generic/about" target="_blank"><img src="https://video.generic.com/images/email/email-gplus.jpg"></a>
+                      <a style="padding-top:2px;" href="https://twitter.com/generic" target="_blank"><img src="https://video.generic.com/images/email/email-twitter.jpg"></a>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <table width="100%">
+                <tbody>
+                  <tr>
+                    <td class="content-block" style="font-size: 12px; vertical-align: top; margin: 0; padding: 13px 20px 10px 20px;" align="center" valign="top">
+                      Generic, Inc. Anywhere, USA<br/>
+                      {{#reasonSent}}This email was sent{{#toAddress}} to {{ toAddress }}{{/toAddress}} {{{ reasonSent }}}.<br/>{{/reasonSent}}
+                      {{#unsubscribeUrl}}<a href="{{{unsubscribeUrl}}}" style="font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;" target="_blank">Unsubscribe from these emails</a><br/>{{/unsubscribeUrl}}
+                      {{#readInBrowserUrl}}Email not displaying correctly? <a href="{{{readInBrowserUrl}}}" style="font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;" target="_blank">View in Browser</a><br/>{{/readInBrowserUrl}}
+                      {{#trackingPixelUrl}}<img src="{{{trackingPixelUrl}}}"/>{{/trackingPixelUrl}}
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

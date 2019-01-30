@@ -1,0 +1,71 @@
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  {{#error}}
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      {{status_code}} {{message}}
+    </td>
+  </tr>
+  {{/error}}
+  {{^error}}
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      Your timelapse is ready!
+      {{#message}}
+      ({{message}})
+      {{/message}}
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      <a href="{{video_url}}">Download it</a> now:<br><br>
+      <a href="{{video_url}}"><strong>{{query_text}}</strong></a>.
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" style="padding: 20px 0 20px;" valign="top">
+      Enjoy,<br>
+      &#8212; The {{product_name}} Team
+    </td>
+  </tr>
+  {{/error}}  
+  </tbody>
+</table>
+
+{{^error}}
+<hr>
+<table>
+  <tbody>
+  <thead>
+    <tr>
+      <th colspan="2">Timelapse Creation Stats</th>
+    </tr>
+  </thead>    
+  <tr>
+    <td>Input size</td>
+    <td>{{input_files_size_bytes_formatted_readable}} ({{input_files_size_bytes_formatted}} bytes)</td>
+  </tr>
+  <tr>
+    <td>Input count</td>
+    <td>{{input_files_count_formatted}}</td>
+  </tr>
+  <tr>
+    <td>Failure count</td>
+	<td>{{input_files_failed_formatted}}</td>
+  </tr>
+  <tr>
+    <td>Compression ratio</td>
+    <td>{{compression_ratio_formatted}}</td>
+  </tr>
+  <tr>
+    <td>Runtime seconds</td>
+    <td>{{timelapse_creation_runtime_seconds_formatted}}</td>
+  </tr>
+  <tr>
+    <td>Timelapse size</td>
+    <td>{{final_timelapse_file_size_bytes_formatted_readable}} ({{final_timelapse_file_size_bytes_formatted}} bytes)</td>
+  </tr>
+  </tbody>
+</table>
+{{/error}}
+  

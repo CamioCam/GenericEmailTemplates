@@ -1,0 +1,28 @@
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      Welcome to {{product_name}}!
+    </td>
+  </tr>
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      If you have any questions or need help getting started, visit <a href="https://{{server_name}}/contact?utm_source=ie&utm_medium=email&utm_campaign=welcome">{{server_name}}/contact</a>. 
+      {{#sign_in_with}}Sign in with {{ sign_in_with }} to access this account. {{/sign_in_with}}
+    </td>
+  </tr>
+  {{#verify_path}}
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+		Please <a href="https://{{server_name}}{{ verify_path }}">verify your email address</a>. You can also verify by pasting this link into your browser:<br/><br/>https://{{server_name}}{{ verify_path }}
+    </td>
+  </tr>
+  {{/verify_path}}
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      Enjoy,<br>
+      &#8212; The {{product_name}} Team
+    </td>
+  </tr>
+  </tbody>
+</table>

@@ -1,0 +1,36 @@
+<table width="100%" cellpadding="0" cellspacing="0">
+  <tbody>
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      
+      {{#isCameraStatePoller}}
+        The following {{cameraLabel}} {{cameraAuxiliaryVerb}} gone offline: <br/><br/>
+        {{#cameraList}}
+          {{#.}}
+            <b><a href="{{cameraUrl}}">{{name}}</a></b> - {{minutesSinceLastCommunication}} minutes since last contact with <a href="https://{{server_name}}">{{server_name}}</a>.<br/>
+          {{/.}}
+        {{/cameraList}}<br/><br/>
+        If this was unexpected, please check the network connection and battery status of {{cameraPronoun}} {{cameraLabel}}. This is the only notification you will receive about {{cameraPronoun}} inactive {{cameraLabel}}.
+      {{/isCameraStatePoller}}
+      
+      {{^isCameraStatePoller}}
+        FYI, {{cameraPronoun}} {{cameraLabel}} did not upload to {{product_name}} for some portion of the past {{hoursCheckedString}} hours:<br/><br/>
+        {{#cameraList}}
+          {{#.}}
+            <b><a href="{{cameraUrl}}">{{name}}</a></b> - {{numberOfHoursWithoutMotion}} {{hourLabel}} without motion {{missingHoursString}}.<br/>
+          {{/.}}
+        {{/cameraList}}<br/><br/>
+        If this was unexpected, please check the network connection of {{cameraPronoun}} {{cameraLabel}}. This is the only notification you will receive about {{cameraPronoun}} inactive {{cameraLabel}}.
+      {{/isCameraStatePoller}}
+      
+    </td>
+  </tr>
+
+  <tr>
+    <td class="content-block" style=" padding: 0 0 20px;" valign="top">
+      Thanks,<br>
+      &#8212; The {{product_name}} Team
+    </td>
+  </tr>
+  </tbody>
+</table>
