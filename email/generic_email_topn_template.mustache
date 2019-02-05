@@ -70,8 +70,8 @@ td.container {
                 <tbody>
                   <tr>
                     <td style="font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius: 6px 6px 0 0; background:#fff; margin: 0; padding: 20px;" align="center" valign="top">
-                      <a href="https://video.generic.com" target="_blank">
-                        <img src="https://storage.googleapis.com/camio_general/generic-logo.png" width="100">
+                      <a href="https://{{server_name}}" target="_blank">
+                        {{product_name}}
                       </a>
                     </td>
                   </tr>
@@ -97,20 +97,13 @@ td.container {
                   <tr>
                     <td class="content-block" style="font-size: 14px; vertical-align: top; margin: 0; padding: 13px 20px 10px 20px; color:#939393" align="center" valign="top">
                       This Daily email gets better as it learns what's important to you. You can 
-                      <a href="http://help.camio.com/hc/en-us/articles/203802259">train it quickly</a> by giving thumbs-up to 
+                      train it quickly by giving thumbs-up to 
                       important events and thumbs-down to unimportant events.<br/>
                     </td>
                   </tr>
                   <tr>
                     <td style="font-size: 16px; vertical-align: top; font-weight: 500; text-align: center; margin: 0; padding: 20px;text-align: center; margin: 0; padding: 20px;" align="center" valign="top">
-                      <a href="https://video.generic.com/app" target="_blank" style="text-decoration: none;color: #3ac162; background: #F6FFF9; border-radius: 5px;font-size: 17px; font-weight: 200; text-shadow: none; cursor: pointer; padding: 8px 20px; letter-spacing: 1px; border: 2px solid #3ac162;display:inline-block">Train Now</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td style="font-size: 16px; vertical-align: top; color: #fff; font-weight: 500; text-align: center; border-radius:  0 0 6px 6px; background: #fff; margin: 0; padding: 13px 20px 10px 20px;" align="right" valign="top">
-                      <a style="padding-top:2px;" href="https://www.facebook.com/generic" target="_blank"><img src="https://video.generic.com/images/email/email-fbook.jpg"></a>
-                      <a style="padding-top:2px;" href="https://plus.google.com/+generic/about" target="_blank"><img src="https://video.generic.com/images/email/email-gplus.jpg"></a>
-                      <a style="padding-top:2px;" href="https://twitter.com/generic" target="_blank"><img src="https://video.generic.com/images/email/email-twitter.jpg"></a>
+                      <a href="https://{{server_name}}/app" target="_blank" style="text-decoration: none;color: #3ac162; background: #F6FFF9; border-radius: 5px;font-size: 17px; font-weight: 200; text-shadow: none; cursor: pointer; padding: 8px 20px; letter-spacing: 1px; border: 2px solid #3ac162;display:inline-block">Train Now</a>
                     </td>
                   </tr>
                 </tbody>
@@ -119,7 +112,7 @@ td.container {
                 <tbody>
                   <tr>
                     <td class="content-block" style="font-size: 12px; vertical-align: top; margin: 0; padding: 13px 20px 10px 20px;" align="center" valign="top">
-                      Generic, Inc. Anywhere, USA<br/>
+                      <br/>
                       {{#reasonSent}}This email was sent{{#toAddress}} to {{ toAddress }}{{/toAddress}} {{{ reasonSent }}}.<br/>{{/reasonSent}}
                       {{#unsubscribeUrl}}<a href="{{{unsubscribeUrl}}}" style="font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;" target="_blank">Unsubscribe from these emails</a><br/>{{/unsubscribeUrl}}
                       {{#readInBrowserUrl}}Email not displaying correctly? <a href="{{{readInBrowserUrl}}}" style="font-size: 12px; color: #999; text-decoration: underline; margin: 0; padding: 0;" target="_blank">View in Browser</a><br/>{{/readInBrowserUrl}}
